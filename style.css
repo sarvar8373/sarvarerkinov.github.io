@@ -16,21 +16,19 @@
 	font-size: 1.25rem;
 	padding-left:5px;
 	padding-right:950px;
-} 	
-#button{
-	display:inline-block;
-	color:white;
-	background-color:white;
-	border:3px solid white;
-	cursor:pointer;
-    width: 3em;
-    height: 2em;
-    vertical-align: middle;
-    content: "";
-    background: no-repeat center center;
-    background-size: 100% 100%;
-	position:relative;
 }
+.navbar-dark .navbar-toggler {
+    color: rgba(255,255,255,.5);
+	border-color: rgba(255,255,255,.1);
+	cursor: pointer;
+	padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
 #header{
 	display:flex;
 	flex-direction:row;
