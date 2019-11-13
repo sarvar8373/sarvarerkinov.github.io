@@ -16,19 +16,87 @@
 	font-size: 1rem;
 	padding-left:5px;
 	padding-right:950px;
+	top:50px;
 }
-.navbar-dark .navbar-toggler {
-    color: rgba(255,255,255,.5);
-	border-color: rgba(255,255,255,.1);
+/* скрываем чекбокс */
+#menu__toggle {
+	opacity: 0;
+  }
+  /* стилизуем кнопку */
+  .menu__btn {
+	display: flex; /* используем flex для центрирования содержимого */
+	align-items: center;  /* центрируем содержимое кнопки */
+	position: relative;
+	top: 20px;
+	float: right;
+	width: 26px;
+	height:0px;
+	top:10px;
 	cursor: pointer;
-	padding: .25rem .75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: .25rem;
-}
-
+	z-index: 1;
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #ffff;
+  }
+  .menu__btn > span::before {
+	content: '';
+	top: -8px;
+  }
+  .menu__btn > span::after {
+	content: '';
+	top: 8px;
+  }
+  /* контейнер меню */
+.menu__box {
+	display: block;
+	position: fixed;
+	visibility: hidden;
+	top: 0;
+	left: -100%;
+	width: 300px;
+	height: 100%;
+	margin: 0;
+	padding: 80px 0;
+	list-style: none;
+	text-align: center;
+	background-color: #ECEFF1;
+	box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }
+  /* элементы меню */
+  .menu__item {
+	display: block;
+	padding: 12px 24px;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	text-decoration: none;
+  }
+  .menu__item:hover {
+	background-color: rgba(255, 255, 255, 0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+	transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+	top: 0;
+	transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+	top: 0;
+	transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+	visibility: visible;
+	float:right;
+  }
 #header{
 	display:flex;
 	flex-direction:row;
@@ -36,9 +104,11 @@
 	padding-left:80px;
 	justify-content:flex-start;
 	align-content:center;
-	width:99,9%;
+	width:100%;
 	border:0px solid red;
 	height:55px;
+	top:0;
+	color:black;
 	background-color:gray;
 	font-size:2em;
 }
@@ -150,6 +220,7 @@
 	border:1px; solid gray;
 }
 .footer{
+	padding:50px;
 	margin-top:50px;
 	background-color:white;
 	
