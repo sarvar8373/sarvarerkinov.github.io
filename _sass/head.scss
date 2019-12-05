@@ -1,0 +1,83 @@
+.navbar2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+	background-color:green;
+}
+.nav-item{
+   display:flex;
+   flex-decoration:row;
+   justify-content:space-around;
+}
+.nav{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+ .navbar3{ 
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+}
+.navbar6, .navbar4{
+    padding: 10px;
+    list-style: none;
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+    font-family: cursive;
+    text-transform: uppercase;
+    padding: 0px 20px;
+    
+}
+span{
+    background-color: darkgreen;
+    padding: 10px;
+    border-radius: 25px 1px 25px 1px;
+    color: white;
+}
+input[type=text] {
+   border: 2px solid rgb(13, 122, 40);
+   font-size:12px;
+   padding: 5px;
+  }
+  button {
+    padding: 5px;
+    background: rgb(255, 255, 255);
+    font-size: 14.5px;
+    border: 2px solid rgb(13, 122, 40);
+    cursor: pointer;
+    color: green;
+  }
+  label{
+      font-size: 28px;
+      display: none;
+  }
+  #toggle{
+      display: none;
+  }
+  @media only screen and (max-width: 800px){
+    label{
+        display: block;
+        cursor: pointer;
+    }
+  
+    .navbar3{
+        display:none;
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        float: right;
+    }
+    .navbar3 a{
+        display: block;
+        border-bottom: 1px solid gray;
+    }
+    #toggle:checked + .navbar3{
+        display:block;
+    }
+  } 
+  
