@@ -24,3 +24,10 @@ font-size: 25px;
         font-size: 15px;
     }
 }
+.contiener{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px;
+}
