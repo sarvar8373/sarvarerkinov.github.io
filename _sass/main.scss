@@ -17,6 +17,8 @@ body{
 .p1{
 color: white; 
 font-size: 25px;
+letter-spacing: 1px;
+line-height: 35px;
 }
 @media only screen and (max-width: 800px){
     .p1{
@@ -30,4 +32,17 @@ font-size: 25px;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 15px;
+}
+@media only screen and (min-width: 1300px){
+    .p1{
+        color: white;
+        letter-spacing: 1px;
+        line-height: 50px;
+    }
+    .navbar3{
+        font-size: 17px;
+    }
+    .navbar6{
+        font-size: 17px;
+    }
 }
