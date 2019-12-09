@@ -2,6 +2,13 @@
     box-sizing: border-box;
     margin: 0;
 }
+.contiener{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px;
+}
 body{
 	background-image:radial-gradient(green ,darkgreen); 
 }
@@ -16,28 +23,67 @@ body{
 }
 .p1{
 color: white; 
-font-size: 25px;
-letter-spacing: 1px;
-line-height: 35px;
+font-size: 20px;
+line-height: 30px;
+
+}
+.photo{
+    position: relative;
+    text-align: center;
+    color:white;
+}
+.photo1{
+    width: 100%;
+    height: auto;
+}
+.text{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text1{
+    font-size: 20px;
+    line-height: 30px;
+}
+.button1{
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    line-height: 60px;
+    padding: 10px 20px;
+}
+.button1:hover{
+    background-color: green;
+    color: white;
+    border: 1px solid green;
 }
 @media only screen and (max-width: 800px){
     .p1{
         color: white;
         font-size: 15px;
     }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .text1{
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .button1{
+        font-size: 15px;
+        padding: 5px 10px;
+    }
 }
-.contiener{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 15px;
-}
+
 @media only screen and (min-width: 1300px){
     .p1{
         color: white;
         letter-spacing: 1px;
-        line-height: 50px;
+        line-height: 30px;
+        font-size: 21px;
     }
     .navbar3{
         font-size: 17px;
@@ -45,4 +91,19 @@ line-height: 35px;
     .navbar6{
         font-size: 17px;
     }
+}
+@media only screen and (max-width: 1150px){
+    .p1{
+        color: white;
+        font-size: 18px;
+    }
+    .picture{
+        width: 270;
+        height: 230;
+    }
+    .picture1{
+        width: 300;
+        height: 350;
+    }
+    
 }

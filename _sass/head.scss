@@ -39,7 +39,7 @@ input[type=text] {
    font-size:12px;
    padding: 5px;
   }
-  button {
+  .button {
     padding: 5px;
     background: rgb(255, 255, 255);
     font-size: 14.5px;
@@ -60,7 +60,11 @@ input[type=text] {
         display: block;
         cursor: pointer;
     }
-    img{
+    .picture{
+        width: 100%;
+        height: auto;
+    }
+    .picture1{
         width: 100%;
         height: auto;
     }
@@ -69,7 +73,6 @@ input[type=text] {
         text-align: center;
         width: 100%;
         line-height: 70px;
-        float: right;
         font-size: 20px;
     }
     .navbar3 a{
