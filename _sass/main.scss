@@ -75,8 +75,9 @@ line-height: 30px;
     .text{
         position: absolute;
         top:50%;
-        left:20%;
-        transform: translate(-15%, -50%);
+        left:3%;
+        right: 3%;
+        transform: translate(0%, -50%);
     }
     .text1{
         font-size: 13px;
