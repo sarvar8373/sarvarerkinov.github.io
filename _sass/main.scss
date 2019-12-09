@@ -58,15 +58,25 @@ line-height: 30px;
     background-color: green;
     color: white;
     border: 1px solid green;
+    font-size: 25px;
+    line-height: 35px;
 }
 @media only screen and (max-width: 800px){
     .p1{
         color: white;
-        font-size: 15px;
+        font-size: 18px;
+	text-align:left;    
+	line-height: 25px;    	
     }
     img{
         width: 100%;
         height: auto;
+    }
+    .text{
+        position: absolute;
+        top:50%;
+        left:20%;
+        transform: translate(-15%, -50%);
     }
     .text1{
         font-size: 13px;
@@ -92,6 +102,7 @@ line-height: 30px;
         font-size: 17px;
     }
 }
+
 @media only screen and (max-width: 1150px){
     .p1{
         color: white;
